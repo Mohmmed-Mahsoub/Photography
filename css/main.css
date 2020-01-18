@@ -1,0 +1,102 @@
+/* Global */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+.container {
+    max-width: 800px;
+    margin:auto;
+    text-align: center;
+    box-shadow: 10px 0px 50px rgb(138, 138, 138), -10px 0px 50px rgb(138, 138, 138);
+}
+
+/*Start Header*/
+header .container {
+    background-color: #fff;
+}
+header .container .main-cont {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header .container .main-cont .cont h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+header .container .main-cont .cont p {
+    color: #989898;
+    margin-top: 0;
+}
+header .container .main-cont .cont a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid #333;
+    display: inline-block;
+    margin-top: 1rem;
+}
+header .container .image {
+    background-image: url("https://source.unsplash.com/De8wMYoSSBc"); 
+    background-size: cover;
+    height:50vh;
+    background-position:center;
+}
+/*End Header*/
+
+/* Start Our Work*/
+.our-work .title {
+    background-color: #333;
+    padding: 1rem;
+}
+.our-work .title h1 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: normal;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding: 0 1rem;
+}
+.our-work .work img {
+    width:100%;
+}
+.our-work .work h3 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.our-work .work p {
+    color: #333;
+    display: inline-block;
+}
+/* End Our Work*/
+
+/* Start Footer */
+footer .container {
+    padding: 2rem 0;
+    color: #333;
+    box-shadow: none;
+}
+footer .container h1 {
+    font-size: 2.5rem;
+}
+/* End Footer */
+
+@media(min-width:600px) {
+    header .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header .container .main-cont, header .container .image {
+        height: 100vh;
+    }
+    header .container .main-cont .cont {
+        width: 70%;
+        margin: auto;
+    }
+}
+
